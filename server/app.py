@@ -1,10 +1,10 @@
 from flask import Flask
-from .views.user import user_blueprint
+from .views.todo import todo_blueprint
 
 
 def register_blueprints(app):
     # Register the Blueprints
-    app.register_blueprint(user_blueprint)
+    app.register_blueprint(todo_blueprint)
 
 
 def create_app():

@@ -1,7 +1,13 @@
 import os
+import uuid
 from .logger import logging
 
 logger = logging.getLogger(__package__)
+
+
+def generate_uid() -> str:
+    """Generate a unique identifier."""
+    return uuid.uuid4().hex
 
 
 def get_db_connection_url():
